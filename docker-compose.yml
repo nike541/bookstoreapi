@@ -1,0 +1,15 @@
+---
+version: "1"
+services:
+      node-express-docker:
+           build:
+              context: .
+              dockerfile: Dockerfile 
+           volumes:
+              - ./:/usr/app
+           container_name: node-express-docker
+           expose:
+              - "5000"
+           ports:
+              - "5000:5000"
+           command: npm start
