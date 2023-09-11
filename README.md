@@ -1,5 +1,5 @@
-step to excute \n
-git clone the repo \n
+step to excute 
+git clone the repo
 add .env to the file and env-virables
 MONGO_URL = mongodb+srv://nikhilprakash1911:12345@cluster0.2r6luje.mongodb.net/
 PASS_SEC = nikhi
