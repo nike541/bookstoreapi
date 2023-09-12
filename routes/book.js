@@ -37,7 +37,7 @@ router.put("/:id", async (req, res) => {
 });
 
 //DELETE
-router.delete("/:id", verifyTokenAndAdmin, async (req, res) => {
+router.delete("/:id", verifyToken, async (req, res) => {
   try {
     await Book.findByIdAndDelete(req.params.id);
     res.status(200).json("Book has been deleted...");
