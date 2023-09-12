@@ -36,7 +36,6 @@ user wants to order online and get it delivered and the service running at the b
  To integrate a payment gateway into your application. The payment gateway has its own set of APIs and interfaces, but your application has its own structure and set of APIs. To integrate the payment gateway into your application, you can use the adapter pattern.
  you need to create an adapter class that will convert the interface of the payment gateway into the interface that your application expects. The adapter class has a method called processPayment that takes the payment amount as an argument and converts it into the payment details that the payment gateway expects. The adapter class then calls the payment gateway's charge method with the payment details and returns the result.
 
-
 6. Advanced Search and Filtering: Search and filter options are available in api where url will be in given format api/books?genre=<name> ,  api/books?new=true . In this way you can search the data in apis and render data to frontend
 ## Tech Stack
 **Server:** Node, Express, postman ,Docker
