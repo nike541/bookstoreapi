@@ -24,11 +24,13 @@ schema.loadClass(books);
 const book = require('../models/Book');
 const savedbook = book.saved();
 
+ ![Car and Driver Class Diagram](https://github.com/nike541/bookstoreapi/assets/70380310/2e969ed3-d9f8-4c61-a4c3-fb5a65e0350d)
+
 
  3.Shopping Cart
 The Command Pattern involves creating objects that represent actions or operations, allowing you to separate the execution of these actions from their implementation. This pattern promotes the decoupling of the object that invokes the action from the object that performs it.By using the Command Pattern, we can easily extend the class's functionality without modifying its implementation, adhering to the Open/Closed Principle.
 
- 
+
  4.Order Management
 user wants to order online and get it delivered and the service running at the backend needs to handle the various stages that can be there during the entire process from order initiation and order placing to the final delivery of the order.
 
@@ -37,6 +39,8 @@ user wants to order online and get it delivered and the service running at the b
  you need to create an adapter class that will convert the interface of the payment gateway into the interface that your application expects. The adapter class has a method called processPayment that takes the payment amount as an argument and converts it into the payment details that the payment gateway expects. The adapter class then calls the payment gateway's charge method with the payment details and returns the result.
 
 6. Advanced Search and Filtering: Search and filter options are available in api where url will be in given format api/books?genre=<name> ,  api/books?new=true . In this way you can search the data in apis and render data to frontend
+
+   
 ## Tech Stack
 **Server:** Node, Express, postman ,Docker
 
